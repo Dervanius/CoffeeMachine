@@ -76,6 +76,9 @@ while is_machine_on:
 
         if choice == "off":
             print("I'm shutting down. Bye, bye!")
+            working_mode = False
+            is_machine_on = False
+        elif choice == "report":
             status()
             working_mode = False
             is_machine_on = False
